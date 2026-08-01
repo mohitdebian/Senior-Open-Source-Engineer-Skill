@@ -16,10 +16,10 @@ There is no build system, test suite, linter, or package manager. All content is
 
 The main skill (`skills/senior-open-source-engineer/`) is organized by engineering phase:
 
-- **`SKILL.md`** — primary entrypoint defining a 9-phase workflow: intake/framing, repository adaptation, architecture learning, change planning, implementation, testing, self-review, PR/commit preparation, engineering journal
-- **`CHECKLIST.md`** — per-contribution execution checklist covering problem framing through git preparation
-- **`ENGINEERING_LOG_TEMPLATE.md`** — template for append-only knowledge capture in target repositories
-- **`rules/`** — deep guidance split by concern: `repository-adaptation.md`, `architecture.md`, `code-quality.md`, `testing.md`, `review.md`, `git.md`, `engineering-mindset.md`
+- **`SKILL.md`** — primary entrypoint defining a 10-phase workflow: issue selection, intake/framing, repository adaptation, architecture learning, change planning, implementation, testing, self-review, PR/commit preparation, engineering journal
+- **`CHECKLIST.md`** — per-contribution execution checklist covering issue selection, issue research, problem framing through git preparation
+- **`ENGINEERING_LOG_TEMPLATE.md`** — template for append-only knowledge capture in a local file (`~/.claude/engineering-log/ENGINEERING_LOG.md`), never pushed to target repositories
+- **`rules/`** — deep guidance split by concern: `issue-selection.md`, `issue-research.md`, `repository-adaptation.md`, `architecture.md`, `code-quality.md`, `testing.md`, `review.md`, `git.md`, `engineering-mindset.md`
 - **`prompts/`** — reusable task prompts: `investigate.md`, `implement.md`, `testing.md`, `review.md`, `journal.md`
 - **`templates/`** — output templates: `commit-message.md`, `issue-summary.md`, `resume-bullet.md`, `star-story.md`
 

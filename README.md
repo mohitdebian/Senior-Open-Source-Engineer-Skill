@@ -85,23 +85,30 @@ senior-open-source-engineer-skill/
 
 The `senior-open-source-engineer` skill requires the agent to do the following before implementation:
 
-1. read the issue carefully
-2. restate the issue clearly
-3. define expected behavior
-4. inspect repository structure
-5. inspect `CONTRIBUTING.md`
-6. inspect `README.md` and docs
-7. detect build system
-8. detect package manager
-9. detect formatter
-10. detect linter
-11. detect test framework
-12. detect CI
-13. detect commit conventions
-14. detect PR templates
-15. detect issue templates
-16. detect naming and code style
-17. inspect architecture notes or ADRs
+1. evaluate the issue for competition, merge likelihood, and engineering value
+2. read the full issue thread — every comment, not just the description
+3. follow links in issue comments (related issues, discussions, docs)
+4. check for linked PRs — skip if a merged PR exists
+5. if unmerged PRs exist, read their diffs and all review comments
+6. restate the issue clearly incorporating full thread context
+7. define expected behavior
+8. inspect repository structure
+9. inspect `CONTRIBUTING.md`
+10. inspect `README.md` and docs
+11. detect build system
+12. detect package manager
+13. detect formatter
+14. detect linter
+15. detect test framework
+16. detect CI
+17. detect commit conventions
+18. detect PR templates
+19. detect issue templates
+20. detect naming and code style
+21. inspect architecture notes or ADRs
+22. search similar issues or merged PRs
+23. search related files
+24. trace the owning execution path
 18. search similar issues or merged PRs
 19. search related files
 20. trace the owning execution path
@@ -120,12 +127,14 @@ Per-contribution checklist to ensure the agent covers problem framing, repositor
 
 ### `skills/senior-open-source-engineer/ENGINEERING_LOG_TEMPLATE.md`
 
-Template for durable engineering journaling. The skill expects the agent to create or append `ENGINEERING_LOG.md` in the target repository.
+Template for durable engineering journaling. The skill expects the agent to create or append to a local `~/.claude/engineering-log/ENGINEERING_LOG.md` file that is never committed to the target repository.
 
 ### `skills/senior-open-source-engineer/rules/`
 
 Deeper guidance split by phase:
 
+- `issue-selection.md`
+- `issue-research.md`
 - `architecture.md`
 - `repository-adaptation.md`
 - `engineering-mindset.md`
@@ -208,7 +217,7 @@ Short alias:
 
 ```text
 /seo
-Investigate this issue before coding. Explain root cause, patch the right layer, and update ENGINEERING_LOG.md.
+Investigate this issue before coding. Explain root cause, patch the right layer, and update the local engineering log.
 ```
 
 ### Claude Code

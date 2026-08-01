@@ -55,26 +55,30 @@ Fix the race condition in the webhook retry scheduler. Match repository style, a
 
 ```text
 /seo
-Investigate why the CLI exits with status 0 on invalid config. Explain root cause, patch the correct ownership layer, and update ENGINEERING_LOG.md.
+Investigate why the CLI exits with status 0 on invalid config. Explain root cause, patch the correct ownership layer, and update the local engineering log.
 ```
 
 ## Expected workflow
 
-1. Read the issue or task carefully and restate it.
-2. Discover repository conventions before writing code.
-3. Trace the relevant execution path and identify the owning abstraction.
-4. Search for existing helpers, patterns, and related fixes.
-5. Implement the narrowest change that solves the problem.
-6. Add tests in the repository's established style.
-7. Run self-review as if approving the PR.
-8. Produce a repository-appropriate commit message, PR description, and engineering log entry.
+1. Evaluate the issue for competition, merge likelihood, and engineering value.
+2. Read the full issue thread — every comment, every link, every linked PR.
+3. If a merged PR exists, skip the issue. If unmerged PRs exist, study why they failed.
+4. Read the issue or task carefully and restate it.
+5. Discover repository conventions before writing code.
+6. Trace the relevant execution path and identify the owning abstraction.
+7. Search for existing helpers, patterns, and related fixes.
+8. Implement the narrowest change that solves the problem.
+9. Add tests in the repository's established style.
+10. Run self-review as if approving the PR.
+11. Produce a repository-appropriate commit message and PR description.
+12. Append an entry to the local engineering log (never committed to the target repo).
 
 ## Contents
 
-- `SKILL.md`: primary operating instructions
-- `CHECKLIST.md`: PR checklist the agent should execute every time
-- `ENGINEERING_LOG_TEMPLATE.md`: append-only contribution journal template
-- `rules/`: deeper guidance on architecture, adaptation, quality, testing, review, and git
+- `SKILL.md`: primary operating instructions (10-phase workflow)
+- `CHECKLIST.md`: per-contribution checklist covering issue selection through git preparation
+- `ENGINEERING_LOG_TEMPLATE.md`: local-only contribution journal template (never pushed to target repos)
+- `rules/`: deeper guidance on issue selection, issue research, architecture, adaptation, quality, testing, review, and git
 - `prompts/`: specialized operator prompts for investigation, implementation, testing, review, and journaling
 - `templates/`: reusable templates for commit messages, issue summaries, resume bullets, and STAR stories
 

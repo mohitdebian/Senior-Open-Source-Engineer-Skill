@@ -2,6 +2,23 @@
 
 Run this checklist for every contribution.
 
+## Issue selection
+
+- [ ] I verified the issue has no merged PR — the problem is not already solved.
+- [ ] I checked assignees and recent comments — no one else has claimed the issue.
+- [ ] I verified the repository is actively maintained (recent commits, PRs being merged).
+- [ ] This issue demonstrates meaningful engineering skill, not just docs or formatting.
+- [ ] A senior engineer at Apple, Google, Microsoft, or Amazon would consider this contribution substantive.
+
+## Issue research
+
+- [ ] I read every comment on the issue, not just the description.
+- [ ] I followed links in issue comments (related issues, discussions, docs, RFCs).
+- [ ] I checked for linked pull requests on the issue.
+- [ ] If unmerged PRs exist, I read their diffs and all review comments.
+- [ ] I understand why any existing PRs stalled or were rejected.
+- [ ] I synthesized a preferred approach based on all available evidence.
+
 ## Problem framing
 
 - [ ] I can restate the issue in precise engineering terms.
@@ -68,6 +85,8 @@ Run this checklist for every contribution.
 
 ## Engineering journal
 
-- [ ] I created `ENGINEERING_LOG.md` if it did not exist, or appended to it if it did.
+- [ ] I appended to the local `~/.claude/engineering-log/ENGINEERING_LOG.md` (created it if it did not exist).
+- [ ] I recorded why this issue was worth picking (contribution value and competition analysis).
 - [ ] I captured architecture learned, alternatives considered, and lessons learned.
 - [ ] I added a resume bullet and STAR story grounded in the actual work.
+- [ ] I did not commit or push the engineering log to the target repository.

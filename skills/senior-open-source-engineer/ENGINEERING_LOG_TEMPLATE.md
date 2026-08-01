@@ -1,5 +1,7 @@
 # ENGINEERING_LOG Entry Template
 
+This is a **local** file stored at `~/.claude/engineering-log/ENGINEERING_LOG.md`. It is your personal contribution tracker — never commit or push it to any target repository.
+
 Append one entry per contribution. Keep entries chronological and factual.
 
 ```md
@@ -11,6 +13,11 @@ Append one entry per contribution. Keep entries chronological and factual.
 - Issue: <issue number, URL, or "N/A">
 - PR: <PR number, URL, or "N/A">
 - Category: <bug fix | feature | refactor | docs | testing | tooling>
+
+### Issue Selection
+- Contribution Value: <why this issue was worth picking — what engineering skill it demonstrates>
+- Competition Analysis: <assignees, existing PRs, claimants at time of selection>
+- Merge Outcome: <pending | merged | closed | rejected — update after PR resolution>
 
 ### Problem
 <What was broken, missing, or risky?>

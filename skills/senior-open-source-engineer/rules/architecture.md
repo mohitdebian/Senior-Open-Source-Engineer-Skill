@@ -108,4 +108,4 @@ For each contribution, capture:
 - key invariants
 - unexpected subsystem behavior
 
-Write those facts into `ENGINEERING_LOG.md`. The log should teach the next engineer how this area works.
+Write those facts into the local `ENGINEERING_LOG.md`. The log should teach the next engineer how this area works.

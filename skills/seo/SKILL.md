@@ -11,6 +11,8 @@ Immediately read and follow the sibling framework at:
 
 - `../senior-open-source-engineer/SKILL.md`
 - `../senior-open-source-engineer/CHECKLIST.md`
+- `../senior-open-source-engineer/rules/issue-selection.md`
+- `../senior-open-source-engineer/rules/issue-research.md`
 - `../senior-open-source-engineer/rules/repository-adaptation.md`
 - `../senior-open-source-engineer/rules/architecture.md`
 - `../senior-open-source-engineer/rules/code-quality.md`
